@@ -2,6 +2,7 @@
 FROM --platform=linux/arm64 node:18-alpine
 
 # Créer un répertoire de travail dans l'image
+RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 # Copier le fichier package.json et package-lock.json (si disponible) dans le répertoire de travail
