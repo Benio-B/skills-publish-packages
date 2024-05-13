@@ -5,7 +5,7 @@ FROM --platform=linux/arm64 node:18-alpine
 WORKDIR /usr/src/app
 
 # Copier le fichier package.json et package-lock.json (si disponible) dans le répertoire de travail
-COPY package*.json .
+COPY package.json .
 COPY index.js .
 
 # Installer les dépendances du projet
