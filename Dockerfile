@@ -9,7 +9,7 @@ COPY package*.json ./
 COPY index.js ./
 
 # Installer les dépendances du projet
-RUN npm install
+RUN npm i
 
 # Copier le reste des fichiers dans le répertoire de travail de l'image
 COPY . .
