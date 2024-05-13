@@ -1,5 +1,5 @@
 # Utiliser une image Node.js en tant qu'image de base
-FROM --platform=linux/arm64/v8 node:18-alpine
+FROM --platform=linux/arm64,linux/arm64/v8,linux/arm/v7,linux/arm/v6 node:18-alpine
 
 # Créer un répertoire de travail dans l'image
 RUN mkdir -p /usr/src/app
@@ -19,4 +19,4 @@ COPY . .
 EXPOSE 3000
 
 # Définir la commande par défaut à exécuter lorsque le conteneur démarre
-CMD [ "npm", "start" ]
+CMD ["node", "index.js"]
