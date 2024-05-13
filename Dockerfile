@@ -1,5 +1,5 @@
 # Utiliser une image Node.js en tant qu'image de base
-FROM arm64v8/node:18
+FROM --platform=linux/arm64 node:lts-alpine
 
 # Créer un répertoire de travail dans l'image
 WORKDIR /usr/src/app
