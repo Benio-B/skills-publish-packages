@@ -1,5 +1,5 @@
 # Utiliser une image Node.js en tant qu'image de base
-FROM --platform=linux/arm64 --platform=linux/arm64/v8 --platform=linux/arm/v7 --platform=linux/arm/v6 node:18-alpine
+FROM arm64v8/node:18-alpine
 
 # Créer un répertoire de travail dans l'image
 RUN mkdir -p /usr/src/app
