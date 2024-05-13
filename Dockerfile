@@ -6,6 +6,7 @@ WORKDIR /usr/src/app
 
 # Copier le fichier package.json et package-lock.json (si disponible) dans le répertoire de travail
 COPY package*.json ./
+COPY index.js ./
 
 # Installer les dépendances du projet
 RUN npm install
