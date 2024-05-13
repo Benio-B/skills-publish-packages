@@ -5,11 +5,11 @@ FROM node:lts-alpine3.19
 WORKDIR /usr/src/app
 
 # Copier le fichier package.json et package-lock.json (si disponible) dans le répertoire de travail
-COPY package.json .
-COPY index.js .
+# COPY package.json .
+# COPY index.js .
 
 # Installer les dépendances du projet
-RUN npm i
+# RUN npm i
 
 # Copier le reste des fichiers dans le répertoire de travail de l'image
 COPY . .
